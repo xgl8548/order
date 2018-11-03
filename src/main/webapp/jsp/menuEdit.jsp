@@ -31,7 +31,7 @@
 				<td><input class = "none" type="text" name="mid" value = "${menu.mid}" readonly = "readonly"/></td>
 				<td><input class = "none" type="text" name="mname" value = "${menu.mname}"/></td>
 				<td>
-					<c:set var="ccid" scope="request" value="${menu.cid}" /> <!--获取当前cid-->
+					<c:set var="ccid" scope="request" value="${menu.cid}" ></c:set> <!--获取当前cid-->
 					<select class = "none" name="cid">
 						<%
 							List<Category> categories = categoryManager.getAllCategories();
