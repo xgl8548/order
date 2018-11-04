@@ -121,4 +121,34 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<!-- 仓库地址 -->
+	<repositories>
+		<repository>
+			<id>nexus</id>
+			<name>Team Nexus Repository</name>
+			<url>http://192.168.42.130:8081/nexus/content/groups/public</url>
+		</repository>
+	</repositories>
+	<!-- 插件地址 -->
+	<pluginRepositories>
+		<pluginRepository>
+			<id>nexus</id>
+			<name>Team Nexus Repository</name>
+			<url>http://192.168.42.130:8081/nexus/content/groups/public</url>
+		</pluginRepository>
+	</pluginRepositories>
+	<!-- 发布地址 -->
+	<distributionManagement>
+		<repository>
+			<id>releases</id>
+			<name>releases</name>
+			<url>http://192.168.42.130:8081/nexus/content/repositories/releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>snapshots</name>
+			<url>http://192.168.42.130:8081/nexus/content/repositories/snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
 </project>
